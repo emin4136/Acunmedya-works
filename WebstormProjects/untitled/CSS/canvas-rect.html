@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>HTML5 Canvas-fillrect</h1>
+<canvas id="myCanvas" width="300"   height="300" style="border:1px solid grey"></canvas>
+<script>
+  var myCanvas=document.getElementById("myCanvas");
+  var resim=myCanvas.getContext("2d");
+  resim.fillStyle="red";
+  resim.fillRect(12,45,170,150);
+
+  resim.fillStyle="green";
+  resim.fillRect(200,200,300,300);
+
+
+
+</script>
+</body>
+</html>

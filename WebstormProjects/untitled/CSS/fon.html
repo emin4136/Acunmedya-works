@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body id="tumsayfa">
+<input type="button" value="Degistir" onclick="fonRengiDegistir()">
+ya da
+<input type="text" onmouseover="fonRengiDegistir()">
+
+<script>
+  function fonRengiDegistir(){
+    var r =Math.floor(Math.random()*99)
+    var g =Math.floor(Math.random()*99)
+    var b =Math.floor(Math.random()*99)
+    document.getElementById('tumsayfa').style.background='#' + r + g + b;
+  }
+  </script>
+</body>
+</html>

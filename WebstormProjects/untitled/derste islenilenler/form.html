@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>form.html</title>
+</head>
+<body>
+<form>
+<table border="0" bgcolor="#7fff00" cellpadding="5"  cellspacing="0">
+  <tr>
+    <td>Email</td>
+    <td>:</td>
+    <td><input type="email"
+               name="Email:"
+               placeholder="E-mailinizi giriniz...">
+    </td>
+  </tr>
+    <tr>
+  <td>Şifre</td>
+  <td>:</td>
+    <td>
+      <input type="password"
+             placeholder="Şifrenizi giriniz..">
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td><input type="button"
+               name="GÖNDER"
+               value="GÖNDER">
+    </td>
+  </tr>
+  </table>
+  <br><br>
+</form>
+
+<form action="" method="get">
+  5+5 isleminin sonucu kactır ? <br>
+  <input type="radio" name="cevap1" value="a"> a)5 <br>
+  <input type="radio" name="cevap1" value="b"> a)10 <br>
+  <input type="radio" name="cevap1" value="c"> a)15 <br>
+  <input type="radio" name="cevap1" value="d"> a)35 <br>
+  <br><br><br>
+
+</form>
+<form action="" method="get">
+  5+5 isleminin sonucu kactır ? <br>
+  <input type="checkbox" name="hobi1" value="sinema"> a)sinema <br>
+  <input type="checkbox" name="hobi2" value="muzik"> b)muzik <br>
+  <input type="checkbox" name="hobi3" value="dans"> c)dans <br>
+  <input type="checkbox" name="hobi4" value="gezi"> d)gezi <br>
+
+</form>
+<br><br>
+<form>
+  renk: <br>
+  <input type="color" name="renk" value="BLUE">
+  <br><br>
+  tarih: <br>
+  <input type="date" name="tarih" id="tarih">
+  <br><br>
+  ses yüksekliği: <br>
+  <input type="range" name="ses"  min="0" max="11"  value="5">
+  <br><br>
+  profil resmi : <br>
+  <input type="file"  name="avatar" id="avatar">
+  <br><br>
+  <input type="hidden" name="referans"   id="referans"   value="1001"> <!--gizli -->
+  <select name="kategori" id="kategori">
+    <option value="1">Elektronik</option>
+    <option value="2">tekstil</option>
+    <option value="3" selected>oto</option>
+    <option value="4">bilisim</option>
+  </select>
+  <br><br>
+  <textarea placeholder="Bir metin giriniz..." name="mesaj" id="mesaj" cols="50" rows="5">
+srtrasftaf
+  </textarea>
+  <textarea rows="4" cols="50" placeholder="Describe yourself here..."></textarea>
+
+</form>
+
+
+</body>
+</html>

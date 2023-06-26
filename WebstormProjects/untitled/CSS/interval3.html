@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diskoisigi</title>
+</head>
+<body id="tumsayfa">
+<script>
+  function fonRengiDegistir(){
+    var r =Math.floor(Math.random()*99)
+    var g =Math.floor(Math.random()*99)
+    var b =Math.floor(Math.random()*99)
+    document.getElementById('tumsayfa').style.background='#' + r + g + b;
+  }
+  setInterval(fonRengiDegistir,10);
+</script>
+
+
+</body>
+</html>

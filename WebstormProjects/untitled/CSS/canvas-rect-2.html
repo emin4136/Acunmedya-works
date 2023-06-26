@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300"   height="300" style="border:1px solid grey"></canvas>
+<script>
+  var myCanvas=document.getElementById("myCanvas");
+  var resim=myCanvas.getContext("2d");
+  resim.moveTo(150,150);
+  for(var i =0; i< 250; i++){
+    for(var k=0; k<20; k++){
+
+     var r =Math.floor(Math.random()*99);
+     var g =Math.floor(Math.random()*99);
+     var b =Math.floor(Math.random()*99);
+
+     resim.fillStyle="#"+r+g+b;
+     resim.fillRect(i,i,k,k);
+    }
+}
+</script>
+
+<br>
+<input type="button" value="Yenile" onclick="window.location.reload()">
+
+
+
+</body>
+</html>

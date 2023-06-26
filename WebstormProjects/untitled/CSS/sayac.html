@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sayac</title>
+  <style>
+    .sayac{
+      font-size:40px;
+      color: red;
+      border:1px dashed black;
+      border-radius: 50px;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<br>
+<span class="sayac" id="sayacyeri">0</span>
+<br>
+<br>
+<input type="button" value="+"  onclick="up()">
+<input type="button" value="-"  onclick="down()">
+<input type="button" value="0" onclick="reset()">
+
+<script>
+  function up() {
+    var simdikiDeger = parseInt(document.getElementById('sayacyeri').innerHTML);
+    document.getElementById('sayacyeri').innerHTML = simdikiDeger + 1;
+  }
+
+    function down(){
+      var simdikiDeger=parseInt(document.getElementById('sayacyeri').innerHTML);
+      document.getElementById('sayacyeri').innerHTML=simdikiDeger - 1;
+  }
+
+  function reset(){
+    document.getElementById('sayacyeri').innerHTML = '0';
+  }
+</script>
+
+
+
+
+</body>
+</html>

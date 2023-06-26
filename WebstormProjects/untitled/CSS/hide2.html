@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Başlık</h1>
+<button onclick="gosterGizle()">Göster/Gizle</button>
+<div id ="detayyeri" style="display: none">
+    Bu div ekranda görünmez.
+</div>
+<script>
+    function gosterGizle() {
+        var e = document.getElementById('detayyeri');
+        if (e.style.display == 'none') {
+            e.style.display = 'block'
+
+        }
+        else {
+            e.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</body>
+</html>

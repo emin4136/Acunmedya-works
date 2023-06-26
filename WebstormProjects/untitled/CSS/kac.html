@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kac</title>
+</head>
+<body>
+<input type="button" id="but" onclick="javascript:Başardın()"
+       onmouseover="javascript:kac()"
+       value="Tamam"
+       style="position: absolute">
+
+
+       <script>
+         function kac(){
+           document.getElementById('but').style.top=Math.floor(Math.random()*200)+"px";
+           document.getElementById('but').style.left=Math.floor(Math.random()*200)+"px";
+         }
+
+         function Başardın(){
+           alert("Sen kazandın!!");
+         }
+       </script>
+
+</body>
+</html>

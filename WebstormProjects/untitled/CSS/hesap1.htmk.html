@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hesap1</title>
+</head>
+<body>
+ Sayi 1 : <input type="text" id="sayi1">
+ <br>
+ Sayi 2 : <input type="text" id="sayi2">
+ <br><br>
+ <input type="button" value="Topla" onclick="topla()">
+ <input type="button" value="Çarp" onclick="carp()">
+ <input type="button" value="Çıkar" onclick="cikar()">
+ <input type="button" value="Bölme" onclick="bolme()">
+ <br> <br>
+Sonuç : <span id="sonucyeri"></span>
+
+<script>
+  function topla(){
+    var sayi1 =document.getElementById('sayi1').value;
+    var sayi2 =document.getElementById('sayi2').value;
+    if (sayi1=='') {
+      alert('sayi1 giriniz...')
+      document.getElementById(sayi1).focus();
+    }
+      else if (sayi2==''){
+        alert('sayi2 giriniz...')
+        document.getElementById(sayi2).focus();
+      }
+      else{
+        sayi1=parseInt(sayi1);
+        sayi2=parseInt(sayi2);
+        document.getElementById('sonucyeri').innerHTML=sayi1 + sayi2;
+    }
+  }
+  function carp(){
+    var sayi1=document.getElementById('sayi1').value;
+    sayi1=parseInt(sayi1);
+    var sayi2=document.getElementById('sayi2').value;
+    sayi2=parseInt(sayi2);
+    document.getElementById('sonucyeri').innerHTML=sayi1 * sayi2;
+
+  }
+
+  function cikar(){
+    var sayi1=document.getElementById('sayi1').value;
+    sayi1=parseInt(sayi1);
+    var sayi2=document.getElementById('sayi2').value;
+    sayi2=parseInt(sayi2);
+    document.getElementById('sonucyeri').innerHTML=sayi1 - sayi2;
+
+  }
+  function bolme(){
+    var sayi1=document.getElementById('sayi1').value;
+    sayi1=parseInt(sayi1);
+    var sayi2=document.getElementById('sayi2').value;
+    sayi2=parseInt(sayi2);
+    document.getElementById('sonucyeri').innerHTML=sayi1 / sayi2;
+
+  }
+</script>
+</body>
+</html>

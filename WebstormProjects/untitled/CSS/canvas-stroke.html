@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Canvas-Stroke</h1>
+<canvas id="myCanvas" width="300"   height="300" style="border:1px solid grey"></canvas>
+  <script>
+    var c=document.getElementById("myCanvas");
+    var resim=c.getContext("2d");
+    resim.beginPath();
+    resim.strokeStyle="red";
+    resim.moveTo(0,0);
+    resim.lineTo(0,280);
+    resim.lineTo(280,280);
+    resim.lineTo(280,0);
+    resim.lineTo(0,0);
+    resim.stroke ();
+
+
+  </script>
+
+</body>
+</html>
